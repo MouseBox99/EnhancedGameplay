@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "enhanced_gameplay",
+	"version": "${version}",
+	"name": "Enhanced Gameplay",
+	"description": "Enhance Gameplay adds some things",
+	"authors": [
+		"MouseBox"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/enhanced-gameplay/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mousebox.enhanced_gameplay.EnhancedGameplay"
+		],
+		"client": [
+			"net.mousebox.enhanced_gameplay.EnhancedGameplayClient"
+		],
+		"fabric-datagen": [
+			"net.mousebox.enhanced_gameplay.EnhancedGameplayDataGenerator"
+		]
+	},
+	"mixins": [
+		"enhanced-gameplay.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
