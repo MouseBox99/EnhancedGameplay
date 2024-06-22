@@ -2,6 +2,8 @@ package net.mousebox.enhanced_gameplay;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.mousebox.enhanced_gameplay.item.ModItemGroups;
+import net.mousebox.enhanced_gameplay.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,5 +14,7 @@ public class EnhancedGameplay implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Prepeare for Enhanced Gameplay!");
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }
